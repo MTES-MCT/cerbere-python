@@ -67,7 +67,7 @@ pip install -r requirements.txt
 python manage.py runserver
 ```
 
-Lancez `http://127.0.0.1:8000/`
+Lancez [`http://127.0.0.1:8000/`](http://127.0.0.1:8000/)
 
 [Créer un compte Cerbère](https://authentification.din.developpement-durable.gouv.fr/authSAML/moncompte/creation/demande.do) si vous n'en avez pas.
 
