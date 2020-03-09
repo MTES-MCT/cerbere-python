@@ -14,7 +14,7 @@ pip install django-cas-ng
 
 Dans le fichier des [settings](cerbere/settings.py),
 
-* ajouter le client cas dans les applis installées :
+* ajouter le client CAS dans les applis installées :
 
 ```python
 INSTALLED_APPS = [
@@ -24,11 +24,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django_cas_ng' # client cas
+    'django_cas_ng' # client CAS
 ]
 ```
 
-* ajouter le client cas dans les middlewares:
+* ajouter le client CAS dans les middlewares:
 
 ```python
 MIDDLEWARE = [
@@ -39,16 +39,16 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'django_cas_ng.middleware.CASMiddleware' # client cas
+    'django_cas_ng.middleware.CASMiddleware' # client CAS
 ]
 ```
 
-* ajouter le client cas dans les backends d'authentification:
+* ajouter le client CAS dans les backends d'authentification:
 
 ```python
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
-    'django_cas_ng.backends.CASBackend' # client cas
+    'django_cas_ng.backends.CASBackend' # client CAS
 )
 ```
 
