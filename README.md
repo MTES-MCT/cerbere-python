@@ -71,4 +71,6 @@ Lancez [`http://127.0.0.1:8000/`](http://127.0.0.1:8000/)
 
 [Créer un compte Cerbère](https://authentification.din.developpement-durable.gouv.fr/authSAML/moncompte/creation/demande.do) si vous n'en avez pas.
 
-[Démo chez Heroku](https://cerbere-python.herokuapp.com/)
+**Seuls les sous-domaines du MTES-MCT autorisés, par exemple `.beta.gouv.fr`, `.e2.rie.gouv.fr` et `.developpement-durable.gouv.fr`, peuvent être utilisés.**
+
+*Sinon vous aurez le message d'erreur au login: `Erreur à l'authentification. Adresse demandée invalide: ...`.*

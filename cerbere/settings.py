@@ -20,13 +20,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = ''
+SECRET_KEY = 'rixd(t=&zv%@yzwvi7i+lb4gag-ja$o!gq8ud4jo)s&fjjj1@e'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    'cerbere-python.herokuapp.com',
+    # don't forget your subdomain here
+    # mysite.beta.gouv.fr,
     '127.0.0.1',
 ]
 
@@ -131,7 +132,3 @@ AUTHENTICATION_BACKENDS = (
 # CAS config
 CAS_SERVER_URL = 'https://authentification.din.developpement-durable.gouv.fr/cas/public'
 CAS_VERSION = '2'
-
-# Configure Django App for Heroku.
-import django_heroku
-django_heroku.settings(locals())
