@@ -131,7 +131,3 @@ AUTHENTICATION_BACKENDS = (
 # CAS config
 CAS_SERVER_URL = 'https://authentification.din.developpement-durable.gouv.fr/cas/public'
 CAS_VERSION = '2'
-
-# Configure Django App for Heroku.
-import django_heroku
-django_heroku.settings(locals())
