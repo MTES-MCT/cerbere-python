@@ -26,8 +26,8 @@ SECRET_KEY = 'rixd(t=&zv%@yzwvi7i+lb4gag-ja$o!gq8ud4jo)s&fjjj1@e'
 DEBUG = False
 
 ALLOWED_HOSTS = [
+    '.herokuapp.com',
     'cerbere-python.herokuapp.com',
-    'localhost',
     '127.0.0.1',
 ]
 
