@@ -1,4 +1,4 @@
-from django.http import HttpResponse
+from django.http import HttpRequest, HttpResponse
 from . import signals
 
 def index(request: HttpRequest) -> HttpResponse:
@@ -11,7 +11,7 @@ def index(request: HttpRequest) -> HttpResponse:
   <body>
   <h1>Bienvenue dans cerbere-python demo</h1>'''
 
-    footer = '''<p>Liens:</p>
+    footer = '''
     <hr><p><a href="https://github.com/MTES-MCT/cerbere-python/">Code source</a></p>
   </body>
 </html>'''
