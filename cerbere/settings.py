@@ -23,10 +23,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'rixd(t=&zv%@yzwvi7i+lb4gag-ja$o!gq8ud4jo)s&fjjj1@e'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = [
+    'cerbere-python.herokuapp.com',
+    'localhost',
+    '127.0.0.1',
+]
 
 # Application definition
 
