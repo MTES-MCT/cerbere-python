@@ -1,1 +1,1 @@
-web: gunicorn cerbere.wsgi
+web: gunicorn cerbere.wsgi --log-file -
