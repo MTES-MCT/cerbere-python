@@ -4,7 +4,7 @@
 
 ## Prérequis Cerbère
 
-**Seuls les sous-domaines du MTES-MCT autorisés, par exemple `.beta.gouv.fr`, `.e2.rie.gouv.fr` et `.developpement-durable.gouv.fr`, peuvent être utilisés avec Cerbère.**
+**Sauf 127.0.0.1 pour les tests, seuls les sous-domaines du MTES-MCT autorisés, par exemple `.beta.gouv.fr`, `.e2.rie.gouv.fr` et `.developpement-durable.gouv.fr`, peuvent être utilisés avec Cerbère.**
 
 *Sinon vous aurez le message d'erreur au login: `Erreur à l'authentification. Adresse demandée invalide: ...`.*
 
