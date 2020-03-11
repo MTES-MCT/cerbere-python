@@ -80,7 +80,7 @@ CAS_VERSION = 'CAS_2_SAML_1_0'
 
 ## Personnaliser le user Cerbere
 
-Dans les logs, les [signals](cerbere/signals.py) émis à l'uathentification du user indiquent tous les attributs fournis par le serveur Cerbère.
+Dans les logs, les [signals](cerbere/signals.py) émis à l'authentification du user indiquent tous les attributs fournis par le serveur Cerbère.
 Les attributs fournis par le serveur Cerbère lors de l'authentification de l'utilisateur en SAML 1.1 sont populés dans un user [personnalisé](https://docs.djangoproject.com/en/3.0/topics/auth/customizing/#specifying-custom-user-model).
 
 L'utilisation de ce dernier est spécifié dans les [settings](cerbere/settings.py):
