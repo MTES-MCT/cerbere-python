@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'rixd(t=&zv%@yzwvi7i+lb4gag-ja$o!gq8ud4jo)s&fjjj1@e'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     # don't forget your subdomain here
@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django_cas_ng' # client cas
+    'django_cas_ng', # client cas
+    'cerbere'
 ]
 
 MIDDLEWARE = [
@@ -124,11 +125,16 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+AUTH_USER_MODEL = 'cerbere.CerbereUser' # custom Cerbere user
+
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
-    'django_cas_ng.backends.CASBackend' # client cas
+    'cerbere.backends.CerbereCASBackend' # custom backend CAS
 )
 
 # CAS config
 CAS_SERVER_URL = 'https://authentification.din.developpement-durable.gouv.fr/cas/public'
-CAS_VERSION = '2'
+CAS_VERSION = 'CAS_2_SAML_1_0'
+CAS_USERNAME_ATTRIBUTE = 'uid'
+CAS_APPLY_ATTRIBUTES_TO_USER = True
+CAS_RENAME_ATTRIBUTES = {'UTILISATEUR.ID':'uid', 'UTILISATEUR.LOGIN': 'login', 'UTILISATEUR.NOM':'last_name','UTILISATEUR.PRENOM':'first_name','UTILISATEUR.MEL':'email','UTILISATEUR.CIVILITE':'civilite','UTILISATEUR.TEL_FIXE':'tel_fixe','UTILISATEUR.UNITE':'unite'}

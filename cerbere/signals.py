@@ -16,6 +16,7 @@ def cas_user_authenticated_callback(sender, **kwargs):
         args.get('user'),
         args.get('created'),
         json.dumps(args.get('attributes'), sort_keys=True, indent=2)))
+    
 
 
 @receiver(cas_user_logout)
